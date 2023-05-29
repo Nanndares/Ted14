@@ -1,0 +1,11 @@
+def encontra_palavras(lista_palavras, letra):
+    list = []
+    for palavra in lista_palavras:
+        if palavra.startswith(letra):
+            list.append(palavra)
+    return list
+palavras = ["casa", "carro", "banana", "maçã", "amor", "abacaxi"]
+letra = "c"
+palavras_iniciadas = encontra_palavras(palavras, letra)
+print("Palavras iniciadas com a letra", letra + ":")
+print(palavras_iniciadas)

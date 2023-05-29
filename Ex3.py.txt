@@ -1,0 +1,9 @@
+def converte_tempo(tempo):
+    horas = tempo // 3600
+    minutos = (tempo % 3600) // 60
+    segundos = (tempo % 3600) % 60
+
+    return f"{horas:02d}:{minutos:02d}:{segundos:02d}"
+tempo_total = 86399
+tempo_formatado = converte_tempo(tempo_total)
+print("Tempo formatado:", tempo_formatado)
